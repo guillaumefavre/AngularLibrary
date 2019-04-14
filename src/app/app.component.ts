@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'library';
+  constructor() {
+  	  var config = {
+	    apiKey: "AIzaSyD6At6hwoSt2Ezxn7C1rgtdji1GZRnuNqE",
+	    authDomain: "angularlibrary-ee868.firebaseapp.com",
+	    databaseURL: "https://angularlibrary-ee868.firebaseio.com",
+	    projectId: "angularlibrary-ee868",
+	    storageBucket: "",
+	    messagingSenderId: "519594276556"
+	  };
+	  firebase.initializeApp(config);
+  }
 }
