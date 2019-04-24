@@ -13,7 +13,7 @@ export class AppComponent {
 	    authDomain: "angularlibrary-ee868.firebaseapp.com",
 	    databaseURL: "https://angularlibrary-ee868.firebaseio.com",
 	    projectId: "angularlibrary-ee868",
-	    storageBucket: "",
+	    storageBucket: "angularlibrary-ee868.appspot.com",
 	    messagingSenderId: "519594276556"
 	  };
 	  firebase.initializeApp(config);
